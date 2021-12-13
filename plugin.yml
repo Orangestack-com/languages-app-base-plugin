@@ -1,0 +1,25 @@
+name: "languages-app-base-plugin"
+description: "Languages application base plugin"
+types: 
+  - app
+tags:
+  - application
+  - kotlin
+  - container
+inputs:
+  - label: "Project name:"
+    type: text
+    name: "project_name"
+  - label: "Project group id:"
+    type: text
+    name: "project_group_id"
+    condition:
+      variable: "language"
+      operator: "=="
+      value: "kotlin"
+  - label: "Project version:"
+    type: text
+    name: "project_version"
+    default: "0.0.1-SNAPSHOT"
+computedInputs:
+  "app_class_name": "{{inputs.project_name|title|replace(' ', '')}}"
