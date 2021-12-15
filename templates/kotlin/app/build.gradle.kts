@@ -1,14 +1,12 @@
 plugins {
     application
-    id("org.jetbrains.kotlin.jvm") version "1.6.0"
     id("org.jetbrains.kotlin.plugin.allopen") version "1.5.31"
     id("com.github.johnrengelman.shadow") version "7.0.0"
-    id("org.jlleitschuh.gradle.ktlint") version "10.1.0"
+    id("org.jlleitschuh.gradle.ktlint") version "10.2.0"
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
-    testImplementation("org.junit-pioneer:junit-pioneer:1.5.0")
+    testImplementation(kotlin("test"))
 }
 
 tasks {

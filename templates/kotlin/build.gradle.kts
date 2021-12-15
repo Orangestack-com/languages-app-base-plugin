@@ -1,6 +1,12 @@
+plugins {
+    kotlin("jvm") version "1.6.10"
+}
+
 allprojects {
-    version = "{{inputs.project_version}}"
-    group = "{{inputs.project_group_id}}"
+    version = "0.0.1-SNAPSHOT"
+    group = "com.test.bla"
+
+    apply { plugin("kotlin") }
 
     repositories {
         val artifactoryUrl: String by project

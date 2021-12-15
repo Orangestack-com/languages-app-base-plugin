@@ -1,14 +1,12 @@
 plugins {
     application
-    id("org.jetbrains.kotlin.jvm") version "1.6.0"
 }
 
 dependencies {
     val cdkVersion: String by project
     implementation("software.amazon.awscdk:core:$cdkVersion")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
-    testImplementation("org.junit-pioneer:junit-pioneer:1.5.0")
     testImplementation("software.amazon.awscdk:assertions:$cdkVersion")
+    testImplementation(kotlin("test"))
 }
 
 tasks {
