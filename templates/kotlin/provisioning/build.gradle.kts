@@ -23,5 +23,5 @@ kotlin {
 }
 
 application {
-    mainClass.set("{{inputs.project_group_id}}.{{computed_inputs.app_class_name}}Kt")
+    mainClass.set("{{project_group_id}}.{{computed_inputs.app_class_name}}Kt")
 }

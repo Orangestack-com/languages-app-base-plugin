@@ -9,6 +9,6 @@ pluginManagement {
         }
     }
 }
-rootProject.name = "{{inputs.project_name}}"
+rootProject.name = "{{project_name}}"
 include(":app")
 include(":provisioning")
