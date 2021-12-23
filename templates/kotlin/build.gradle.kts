@@ -3,7 +3,7 @@ plugins {
 }
 
 allprojects {
-    version = "0.0.1-SNAPSHOT"
+    version = "{{inputs.project_version}}"
     group = "{{inputs.project_group_id}}"
 
     apply { plugin("kotlin") }

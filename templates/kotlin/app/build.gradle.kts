@@ -1,6 +1,6 @@
 plugins {
     application
-    id("org.jetbrains.kotlin.plugin.allopen") version "1.5.31"
+    kotlin("plugin.allopen") version "1.6.10"
     id("org.jlleitschuh.gradle.ktlint") version "10.2.0"
 }
 
