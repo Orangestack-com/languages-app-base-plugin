@@ -10,9 +10,11 @@ inputs:
   - label: "Project name:"
     type: text
     name: "project_name"
+    global: true
   - label: "Project group id:"
     type: text
     name: "project_group_id"
+    global: true
     condition:
       variable: "language"
       operator: "=="
