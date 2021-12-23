@@ -22,5 +22,5 @@ kotlin {
 }
 
 application {
-    mainClass.set("{{inputs.project_group_id}}.ApplicationKt")
+    mainClass.set("{{project_group_id}}.ApplicationKt")
 }

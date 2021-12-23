@@ -1,4 +1,4 @@
-package {{inputs.project_group_id}}
+package {{project_group_id}}
 
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
