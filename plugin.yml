@@ -24,4 +24,4 @@ inputs:
     name: "project_version"
     default: "0.0.1-SNAPSHOT"
 computedInputs:
-  "app_class_name": "{{project_name|title|replace(' ', '')}}"
+  "app_class_name": "{{project_name|to_camel|replace(' ', '')}}"
