@@ -10,9 +10,7 @@ allprojects {
 
     repositories {
         val artifactoryUrl: String by project
-        maven {
-            url = uri("https://plugins.gradle.org/m2/")
-        }
+        mavenCentral()
         maven {
             url = uri(artifactoryUrl)
         }
